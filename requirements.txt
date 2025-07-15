@@ -5,3 +5,4 @@ langchain
 flask
 langchain-huggingface
 langchain-community
+pypdf

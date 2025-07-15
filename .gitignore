@@ -1,0 +1,6 @@
+*.bin
+*.ggml*
+*.pt
+*.ckpt
+.env
+model/
