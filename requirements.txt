@@ -6,3 +6,5 @@ flask
 langchain-huggingface
 langchain-community
 pypdf
+langchain-pinecone
+huggingface-hub
