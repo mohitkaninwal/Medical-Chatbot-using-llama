@@ -1,0 +1,15 @@
+[00:28:07]: creating directory; src for the file __init__.py
+[00:28:07]: creating empty file: src\__init__.py
+[00:28:07]: creating directory; src for the file helper.py
+[00:28:07]: creating empty file: src\helper.py
+[00:28:07]: creating directory; src for the file prompt.py
+[00:28:07]: creating empty file: src\prompt.py
+[00:28:07]: .env is already created
+[00:28:07]: creating empty file: setup.py
+[00:28:07]: creating directory; research for the file trials.py,app.py
+[00:28:07]: creating empty file: research\trials.py,app.py
+[00:28:07]: creating empty file: store_index.py
+[00:28:07]: creating empty file: static
+[00:28:07]: creating directory; templates for the file chat.html
+[00:28:07]: creating empty file: templates\chat.html
+[00:30:12]: creating directory; src for the file __init__.py
