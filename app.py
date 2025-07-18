@@ -40,19 +40,21 @@ chain = create_retrieval_chain(retriever, question_answer_chain)
 
 #llm_response= chain.invoke({"input": 'what is acne'})
 
+
 @app.route('/')
 def index():
     return render_template('chat.html')
 
-@app.route('/')
+@app.route('/get', methods=['POST'])
 def chat():
-    msg=request.form['msg']
-    input=msg
-    print(input)
-    result=chain.invoke({'input':input})
-    print('Response: ',result['result'])
-    return str(result['result '])
+    msg = request.form.get('msg', '')
+    if not msg:
+        return jsonify({"error": "No message provided"}), 400
 
+    print("User Input:", msg)
+    result = chain.invoke({'input': msg})
+    print("LLM Response:", result.get('answer') or result.get('result'))
+    return str(result.get('answer') or result.get('result'))
 
-if __name__== '__main__':
+if __name__ == '__main__':
     app.run(debug=True)
